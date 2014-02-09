@@ -3,7 +3,9 @@
 <head>
   <title>Nathan Bashaw</title>
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/quc1wmr.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
   <style>
     body {
       margin: 0;
@@ -15,20 +17,52 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       position: relative;
-      margin-bottom: 300px;
     }
     .gradient {
       background-image: -webkit-linear-gradient(top, rgba(32,26,23, 0), rgba(32,26,23, 1));
-      height: 500px;
+      height: 600px;
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
     }
+    .nathan {
+      margin: 0 auto;
+      max-width: 600px;
+      color: #503F21;
+      padding: 50px 10px;
+      font-size: 2em;
+      text-align: center;
+    }
+    .name {
+      font-family: "chippewa-falls", serif;
+      font-weight: normal;
+      font-size: 3em;
+      margin-bottom: 0;
+    }
+    p, li {
+      font-family: "aktiv-grotesk-std", sans-serif;
+      font-size: 0.6em;
+      line-height: 1.6em;
+      margin-bottom: 2.5em;
+    }
+    .subtitle {
+      font-style: italic;
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: 1em;
+      color: #3D2D1A;
+    }
     @media (max-width: 600px) {
       .kindred {
         background-size: 732px;
         height: 750px;
+      }
+      .name {
+        font-size: 60px;
+      }
+      .subtitle {
+        font-size: 20px;
       }
     }
   </style>
@@ -36,5 +70,9 @@
 <body>
   <div class="kindred">
     <div class="gradient"></div>
+  </div>
+  <div class="nathan">
+    <h1 class="name">Nathan Bashaw</h1>
+    <p class="subtitle">creator of internet things</p>
   </div>
 </body>
