@@ -9,70 +9,114 @@
   <style>
     body {
       margin: 0;
-      background: #201A17;
+      background: rgba(12,6,3,1);
     }
     .kindred {
-      height: 1500px;
+      height: 1800px;
       background-image: url('kindred-spirits-small.jpg');
       background-repeat: no-repeat;
       background-position: 50% 0;
       position: relative;
     }
     .gradient {
-      background-image: -webkit-linear-gradient(top, rgba(32,26,23, 0), rgba(32,26,23, 1));
-      height: 600px;
+      background-image: -webkit-linear-gradient(top, rgba(32,26,23,0), rgba(32,26,23,1));
+      height: 1000px;
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
     }
     .nathan {
-      margin: 0 auto;
-      max-width: 600px;
-      color: #503F21;
-      padding: 50px 10px;
+      color: #695D48;
+      text-shadow: 0px 2px 0px #000;
       font-size: 2em;
       text-align: center;
+      background-image: -webkit-linear-gradient(top, rgba(32,26,23,1), rgba(32,26,23,0));
     }
-    .name {
+    .inner {
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 50px 10px;
+    }
+    h1, h2, h3, h4, h5, h6 {
       font-family: "chippewa-falls", serif;
       font-weight: normal;
-      font-size: 3em;
-      margin-bottom: 0;
     }
-    p, li {
+    h1 {
+      font-size: 2.5em;
+    }
+    p {
       font-family: "aktiv-grotesk-std", sans-serif;
-      font-size: 0.6em;
-      line-height: 1.6em;
+      font-size: 0.7em;
+      line-height: 1.7em;
       margin-bottom: 2.5em;
     }
     .subtitle {
       font-style: italic;
-      font-size: 1em;
+      font-size: .9em;
       text-transform: uppercase;
       letter-spacing: 1em;
-      color: #3D2D1A;
+    }
+    .nathan a {
+      color: #7D8B8B;
+      text-decoration: none;
+    }
+    .nathan a:hover {
+      text-decoration: underline;
     }
     @media (max-width: 600px) {
       .kindred {
         background-size: 732px;
         height: 750px;
       }
-      .name {
-        font-size: 50px;
-      }
-      .subtitle {
-        font-size: 18px;
+      .nathan {
+        font-size: 1.4em;
       }
     }
   </style>
 </head>
 <body>
-  <div class="kindred">
+  <section class="kindred">
     <div class="gradient"></div>
-  </div>
-  <div class="nathan">
-    <h1 class="name">Nathan Bashaw</h1>
-    <p class="subtitle">creator of internet things</p>
-  </div>
+  </section>
+  <section class="nathan">
+    <div class="inner">
+      <div class="story">
+        <h1>My Story</h1>
+        <p>
+          Grew up in Arkansas<br>
+          Went to Michigan State<br>
+          Joined the <a target="_blank" href="http://debate.msu.edu/debate/about/history">debate team</a><br>
+          Studied political philosophy<br>
+          Secured a Capitol Hill internship<br>
+          It was pretty boring<br>
+          Discovered Paul Graham <a href="http://paulgraham.com/love.html" target='_blank'>essays</a><br>
+          Learned to design and code websites<br>
+          Built <a href="http://thoughtback.com" target="_blank">an app</a> with some friends<br>
+          Started a <a href="http://www.facebook.com/groups/hackersandhustlers" target="_blank">tech meetup</a><br>
+          Graduated from Michigan State<br>
+          Joined <a href="http://www.olark.com" target="_blank">Olark</a> as a designer<br>
+          Moved to Palo Alto<br>
+          Lived in the <a href="https://www.google.com/maps/preview/@37.447135,-122.165129,3a,75y,32.95h,82.98t/data=!3m4!1e1!3m2!1seLhrZ9h33cfXhvUOw0GmLA!2e0" target="_blank">Olark house</a><br>
+          Spent a lot of time coding</br>
+          Moved to San Francisco<br>
+          Fell in love with <a target="_blank" href="http://instagram.com/p/ZMZFhHmmVk/">a girl</a></br>
+          Left Olark<br>
+          Started a startup<br>
+          <a href="http://sandboxclub.co/" target="_blank">First idea</a> was a flop<br>
+          <a href="http://scratchpad.io" target="_blank">Second idea</a> got some attention<br>
+          Got an email from a guy named <a href="https://twitter.com/bhargreaves" target="_blank">Brad</a><br>
+          Joined forces with <a href="http://generalassemb.ly" target="_blank">General Assembly</a>!<br>
+          Started working on <a href="http://dash.ga.co" target="_blank">Dash</a><br>
+          Built a team<br>
+          <a target="_blank" href="http://techcrunch.com/2013/10/15/general-assembly-launches-dash-a-tool-for-coding-newbies/">Launched</a> Dash!<br>
+          Got a really <a href="http://blog.generalassemb.ly/dash-one-week-later/" target="_blank">nice response</a><br>
+          Started working on community apps at GA<br>
+          Built <a href="http://www.producthunt.co" target="_blank">Product Hunt</a> with my friend <a href="http://twitter.com/rrhoover" target="_blank">Ryan</a><br>
+          Traffic just kept <a href="http://cl.ly/Tp6Q" target="_blank">growing</a><br>
+        </p>
+        <h3>The End</h3>
+      </div>
+    </div>
+  </section>
 </body>
