@@ -3,23 +3,34 @@
 <head>
   <title>Nathan Bashaw</title>
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <style>
     body {
       margin: 0;
+      background: #201A17;
     }
     .kindred {
-      height: 1800px;
+      height: 1500px;
       background-image: url('kindred-spirits.jpg');
       background-repeat: no-repeat;
       background-position: 50% 0;
+      position: relative;
+      margin-bottom: 300px;
+    }
+    .gradient {
+      background-image: -webkit-linear-gradient(top, rgba(32,26,23, 0), rgba(32,26,23, 1));
+      height: 500px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
     @media (max-width: 600px) {
-      .kindred {
-        background-size: 150%;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="kindred"></div>
+  <div class="kindred">
+    <div class="gradient"></div>
+  </div>
 </body>
