@@ -147,15 +147,19 @@
       return check; }
 
     var arrow = document.getElementById('arrow');
+
     var fadeArrow = function() {
-      var opacity = 1 - (window.pageYOffset * 0.0008);
-      arrow.style.borderColor = 'rgba(255,255,255,' + opacity + ')';
-      arrow.style.bottom = ((window.pageYOffset / 2) + 60) + 'px';
-      //arrow.style.webkitTransform = 'blur(' ((window.pageYOffset / 2) + 60) + ')';
+      if (!mobileCheck()) {
+        var opacity = 1 - (window.pageYOffset * 0.0008);
+        arrow.style.borderColor = 'rgba(255,255,255,' + opacity + ')';
+        arrow.style.bottom = ((window.pageYOffset / 2) + 60) + 'px';
+      } else if (window.pageYOffset > 0) {
+        arrow.style.borderColor = 'rgba(255,255,255,0)';
+      }
     }
-    if (!mobileCheck()) {
-      fadeArrow();
-      window.onscroll = fadeArrow;
-    }
+
+    // Call the functions
+    fadeArrow();
+    window.onscroll = fadeArrow;
   </script>
 </body>
