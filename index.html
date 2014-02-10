@@ -11,6 +11,18 @@
       margin: 0;
       background: rgba(12,6,3,1);
     }
+    .arrow {
+      position: fixed;
+      bottom: 60px;
+      -webkit-transform: rotate(45deg);
+      width: 60px;
+      height: 60px;
+      border-bottom: 5px solid rgba(255,255,255,.5);
+      border-right: 5px solid rgba(255,255,255,.5);
+      z-index: 100;
+      left: 50%;
+      margin-left: -30px;
+    }
     .kindred {
       height: 1800px;
       background-image: url('kindred-spirits-small.jpg');
@@ -25,12 +37,16 @@
       bottom: 0;
       left: 0;
       right: 0;
+      z-index: 101;
     }
     .nathan {
+      position: relative;
+      z-index: 102;
       color: #695D48;
       text-shadow: 0px 2px 0px #000;
       font-size: 2em;
       text-align: center;
+      background: rgba(12,6,3,1);
       background-image: -webkit-linear-gradient(top, rgba(32,26,23,1), rgba(32,26,23,0));
     }
     .inner {
@@ -83,6 +99,7 @@
   </style>
 </head>
 <body>
+  <div class="arrow"></div>
   <section class="kindred">
     <div class="gradient"></div>
   </section>
